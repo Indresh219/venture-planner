@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Spots</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://tse4.mm.bing.net/th?id=OIP._3w4cXQop1aJNYHRmU8M_wHaE7&pid=Api&P=0&h=180') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .heading-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-content h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .card-content p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #666;
+  }
+
+  .card:hover .card-content h3,
+  .card:hover .card-content p {
+    color: #ff6b6b;
+  }
+</style>
+</head>
+<body>
+  <div class="heading-box" id="headingBox">
+    <h1>Explore Famous Spots</h1>
+  </div>
+  <div class="container">
+    <div class="card" onclick="window.location.href='page1.html'">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.yKIECImJkisXRX7Dht_g4wHaEc&pid=Api&P=0&h=180" alt="Place 1">
+      <div class="card-content">
+        <h3>ISHA</h3>
+        <p>ADDRESS:Isha Yoga centre Velliangiri Foothills, Coimbatore,</p>
+      </div>
+    </div>
+    <div class="card" onclick="window.location.href='page2.html'">
+      <img src="https://cdn.dribbble.com/users/2412175/screenshots/7167720/media/10c076781ed008f2a409618c3fd87782.png" alt="Place 2">
+      <div class="card-content">
+        <h3>VALPARAI</h3>
+        <p>ADDRESS:FROM POLLACHI 64 KMS</p>
+      </div>
+    </div>
+    <div class="card" onclick="window.location.href='page3.html'">
+      <img src="https://imgs.search.brave.com/xoZrwYP0ESpzkScPk9OPh9zgT4xlQa8qCdUy5SJUpYI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhdmVsdHJp/YW5nbGUuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjAvMDIvVmFpZGVo/aS1XYXRlcmZhbGxz/XzE0dGgtZmViLmpw/Zw" alt="Place 3">
+      <div class="card-content">
+        <h3>THIROMOORTHI FALLS</h3>
+        <p>ADDRESS:UDUMALAIPET COIMBATORE</p>
+      </div>
+    </div>
+    <div class="card" onclick="window.location.href='page4.html'">
+      <img src="https://i.ytimg.com/vi/WJLwe3Jdugk/maxresdefault.jpg" alt="Place 4">
+      <div class="card-content">
+        <h3>GEDEE CAR MUSEUM</h3>
+        <p>ADDRESS:President Hall Avinashi Road, Coimbatore</p>
+      </div>
+    </div>
+    <div class="card" onclick="window.location.href='page5.html'">
+      <img src="https://i.ytimg.com/vi/Z8CCKZ6R4go/maxresdefault.jpg" alt="Place 5">
+      <div class="card-content">
+        <h3>VALANKULAM LAKE</h3>
+        <p>ADDRESS:UKKADAM COIMBATORE</p>
+      </div>
+    </div>
+    <div class="card" onclick="window.location.href='page6.html'">
+      <img src="https://www.trawell.in/admin/images/upload/42821271VOC_Zoo.jpg" alt="Place 6">
+      <div class="card-content">
+        <h3>VOC PARK</h3>
+        <p>ADDRESS:Gopalapuram COIMBATORE</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function() {
+      setTimeout(function() {
+        document.getElementById("headingBox").style.opacity = "1";
+      }, 500);
+    };
+  </script>
+
+  <!-- Replace 'page1.html' to 'page6.html' with the actual page URLs you want to navigate to -->
+</body>
+</html>

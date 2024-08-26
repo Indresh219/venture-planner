@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Explorer</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff8c94, #6a0572);
+            color: #fff;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .hotel-details {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .hotel-price {
+            font-size: 24px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        
+        .hotel-ratings {
+            color: #f57c00;
+            margin-bottom: 10px;
+        }
+
+        .hotel-description {
+            margin-bottom: 20px;
+        }
+
+        .hotel-gallery {
+            display: flex;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        .hotel-image {
+            width: 300px;
+            height: 200px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-right: 10px;
+        }
+
+        .hotel-image:last-child {
+            margin-right: 0;
+        }
+
+        .hotel-image:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        .prev-arrow {
+            left: 0;
+        }
+
+        .next-arrow {
+            right: 0;
+        }
+
+        .hotel-details {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hotel-details h2 {
+            margin-top: 0;
+        }
+
+        .hotel-details p {
+            margin: 0;
+        }
+
+        .hotel-description {
+            margin-bottom: 20px;
+        }
+
+        .explore-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .explore-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hotel Name</h1>
+
+        <div class="hotel-gallery">
+            <img src="http://worldalldetails.com/article_image/comfort_hotel_vacation_131319.jpg" alt="Hotel Photo 1" class="hotel-image">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.zPLBbxoDE8p7OyMLaknzXQHaEH&pid=Api&P=0&h=180" alt="Hotel Photo 2" class="hotel-image">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.pMbbR4yghEce8r2rV5aIRQHaE4&pid=Api&P=0&h=180" alt="Hotel Photo 3" class="hotel-image">
+            <!-- Add more images as needed -->
+        </div>
+        <div class="nav-arrow prev-arrow">&lt;</div>
+        <div class="nav-arrow next-arrow">&gt;</div>
+
+        <div class="hotel-details">
+            <div class="hotel-price">$XXX / night</div>
+            <div class="hotel-ratings">Ratings: 4.5/5</div>
+            <p class="hotel-description">Description of the hotel goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam arcu vel velit varius, eu dictum justo ultrices.</p>
+            <a href="#" class="explore-button">Explore</a>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.next-arrow').addEventListener('click', function() {
+            document.querySelector('.hotel-gallery').scrollBy({
+                left: 320,
+                behavior: 'smooth'
+            });
+        });
+
+        document.querySelector('.prev-arrow').addEventListener('click', function() {
+            document.querySelector('.hotel-gallery').scrollBy({
+                left: -320,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+</html>

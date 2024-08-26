@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Spots</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://i.ytimg.com/vi/Oc3_lYXD0Mo/maxresdefault.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .heading-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-content h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .card-content p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #666;
+  }
+
+  .card:hover .card-content h3,
+  .card:hover .card-content p {
+    color: #ff6b6b;
+  }
+</style>
+</head>
+<body>
+  <div class="heading-box" id="headingBox">
+    <h1>Explore Hidden Spots</h1>
+  </div>
+  <div class="container">
+    <div class="card" onclick="window.location.href='page1.html'">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.-hF-jzV853ky73ydHQ0UmgHaE8&pid=Api&P=0&h=180" alt="Place 1">
+      <div class="card-content">
+        <h3>MAHABALIPURAM</h3>
+        <p>ADDRESS:MAHABALIPURAM ROAD,CHENNAI</p>
+      </div>
+    </div>
+    <div class="card" onclick="window.location.href='page2.html'">
+      <img src="https://static-blog.treebo.com/blog/wp-content/uploads/2018/06/Ripon-Building.jpg" alt="Place 2">
+      <div class="card-content">
+        <h3>RIPON BUILDING</h3>
+        <p>ADDRESS:RAJA MUTHAIYAH ROAD,CHENNAI</p>
+      </div>
+    </div>
+    <div class="card" onclick="window.location.href='page3.html'">
+      <img src="https://www.fabhotels.com/blog/wp-content/uploads/2018/10/Marina-Beach.jpg" alt="Place 3">
+      <div class="card-content">
+        <h3>MARINA BEACH</h3>
+        <p>ADDRESS:BEACH ROAD CHENNAI</p>
+      </div>
+    </div>
+    <div class="card" onclick="window.location.href='page4.html'">
+      <img src="https://thumbs.dreamstime.com/b/napier-bridge-chennai-chennai-tourist-places-tamilnadu-napier-bridge-chennai-chennai-tourist-places-tamilnadu-india-169563298.jpg" alt="Place 4">
+      <div class="card-content">
+        <h3>NAPIER BRIDGE</h3>
+        <p>ADDRESS:ISLAND PARK TOWN,CHENNAI</p>
+      </div>
+    </div>
+    <div class="card" onclick="window.location.href='page5.html'">
+      <img src="https://res.cloudinary.com/roundglass/image/upload/w_1104,h_736,c_fill/q_auto:best,f_auto/v1616563702/roundglass/pulicat-lake-sunset-m-yuvan_ohkb0f.jpg" alt="Place 5">
+      <div class="card-content">
+        <h3>PULICAT LAKE</h3>
+        <p>ADDRESS:PERIYAR NAGAR SOWCARPET CHENNAI</p>
+      </div>
+    </div>
+    <div class="card" onclick="window.location.href='page6.html'">
+      <img src="https://madrascrocodilebank.org/static/img/gallery/Gharial2_11zon.webp" alt="Place 6">
+      <div class="card-content">
+        <h3>THE MADRAS CROCADILE BANK</h3>
+        <p>ADDRESS:POST BAG NO 4 MAHABALIPURAM  ,CHENNAI</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function() {
+      setTimeout(function() {
+        document.getElementById("headingBox").style.opacity = "1";
+      }, 500);
+    };
+  </script>
+
+  <!-- Replace 'page1.html' to 'page6.html' with the actual page URLs you want to navigate to -->
+</body>
+</html>

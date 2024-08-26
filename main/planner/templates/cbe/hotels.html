@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Places Showcase with Glowing Effect</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://globalexpatrecruiting.com/wp-content/uploads/2018/10/Wyndham-Sundancer-Resort-Lombok-opens-in-Indonesia.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            transition: background 0.5s ease-in-out;
+        }
+
+        h1 {
+            padding: 20px;
+            background-color: #d00000;
+            color: #fff;
+            font-size: 2em;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: auto;
+        }
+
+        .places-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .paper {
+            border: 1px solid;
+            border-top-right-radius: 68px 2px;
+            border-top-left-radius: 2px 53px;
+            border-bottom-right-radius: 2px 73px;
+            border-bottom-left-radius: 78px 1.3px;
+            box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
+            font-family: "Comic Sans MS", "sans-serif";
+            margin: 20px;
+            transform: rotate(0deg);
+        }
+
+        .sticky-notes {
+            background-color: white;
+            height: 250px;
+            width: 350px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: lightyellow;
+            position: relative;
+            overflow: auto; /* Add overflow for scrolling */
+        }
+
+        .sticky-notes img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sticky-notes h2, .sticky-notes p {
+            color: black;
+            margin: 0;
+        }
+
+        .sticky-notes::before,
+        .sticky-notes::after {
+            content: "";
+            background-color: darkred;
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid #4c0000;
+        }
+
+        .sticky-notes::before {
+            width: 20px;
+            height: 20px;
+            top: -10px;
+            left: -10px;
+        }
+
+        .sticky-notes::after {
+            width: 10px;
+            height: 10px;
+            top: -5px;
+            left: -5px;
+        }
+
+        .explore-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .explore-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Residencies in Coimbatore</h1>
+
+    <div class="places-container">
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://hotelkkresidency.com/imgs/welcome-img.jpg" alt="Sticky Note 1">
+                <div>
+                    <h2>KK Residency</h2>
+                    <p>Behind Central Bus Stand, Ramnagar, Coimbatore</p>
+                    <p>Price: ₹1500/night</p>
+                    <p>Rating: 5</p>
+                    <a href="hotel1cbe" class="explore-button">Add to file</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat the paper div for more sticky notes -->
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://vivemedia-1d168.kxcdn.com/352233/0.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>Kooloth Residency</h2>
+                    <p>Ramae Kovil St,Ukkadam,Coimbatore.</p>
+                    <p>Price: ₹1400/night</p>
+                    <p>Rating: 4.5</p>
+                    <a href="hotel2cbe" class="explore-button">Add to file</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.AVmwg2M0njh3b_9Y2nfDogHaLH&pid=Api&P=0&h=180" alt="Sticky Note 2">
+                <div>
+                    <h2>Sri NA Residency</h2>
+                    <p>TNHB Colony, Madhusudhan Layout, Civil Aerodrome Post, Sitra, Coimbatore</p>
+                    <p>Price: ₹1450/night</p>
+                    <p>Rating: 3.5</p>
+                    <a href="hotel3cbe" class="explore-button">Add to file</a>
+                </div>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max500/328796809.jpg?k=e0fde5029f641786e3b470cf53c95c561919f41cd45c1bb57d97450d5e966ffe&o=&hp=1" alt="Sticky Note 2">
+                <div>
+                    <h2>Sri Krishna Vilas</h2>
+                    <p>Address: 43, Old Post Office Rd, Near Collector Office, Gopalapuram, Coimbatore.</p>
+                    <p>Price: ₹1500/night</p>
+                    <p>Rating: 3.7</p>
+                    <a href="explore/another-place" class="explore-button">Add to file</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://pix4.agoda.net/hotelimages/162/1624159/1624159_17110213570058627253.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>Radisson</h2>
+                    <p>AVINASHI ROAD,PEELAMEDU,Coimbatore</p>
+                    <p>Price:₹3000/night</p>
+                    <p>Rating: 3.9</p>
+                    <a href="explore/another-place" class="explore-button">Add to file</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://im.hunt.in/cg/coimbatore/City-Guide/Park-Plaza-Cbe.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>Hotel Park Plaza</h2>
+                    <p>City, Country</p>
+                    <p>Price: ₹1300/night</p>
+                    <p>Rating: 4.7</p>
+                    <a href="explore/another-place" class="explore-button">Add to file</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="http://photos.wikimapia.org/p/00/02/56/70/54_full.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>City Tower</h2>
+                    <p>56 Sivasamy Road Ram Nagar,Coimbatore</p>
+                    <p>Price: ₹1650/night</p>
+                    <p>Rating: 4.3</p>
+                    <a href="explore/another-place" class="explore-button">Add to file</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3337/x_0,y_262,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_910,f_auto,c_fit/jenneys-residency/Exgterior_Day,_Avinashi_Road_Hotels,_Coimbatore_Hotels,_Banquet_Halls_in_Coimbatore" alt="Sticky Note 2">
+                <div>
+                    <h2>Jenney Residency</h2>
+                    <p>Avinashi Rd, Opp CIT, Peelamedu, Civil Aerodrome Post, Coimbatore</p>
+                    <p>Price: ₹1500/night</p>
+                    <p>Rating: 5</p>
+                    <a href="explore/another-place" class="explore-button">Add to file</a>
+                </div>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://www.zonebythepark.com/images/Rooms/12_19_2018_06_19_44Zone%20Coimbator-3323.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>LE GARDEN</h2>
+                    <p>AVINASH ROAD ,RS PURAM, Country</p>
+                    <p>Price: ₹1700/night</p>
+                    <p>Rating: 4.1</p>
+                    <a href="result" class="explore-button">Add to file</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Places Showcase with Glowing Effect</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://globalexpatrecruiting.com/wp-content/uploads/2018/10/Wyndham-Sundancer-Resort-Lombok-opens-in-Indonesia.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            transition: background 0.5s ease-in-out;
+        }
+
+        h1 {
+            padding: 20px;
+            background-color: #d00000;
+            color: #fff;
+            font-size: 2em;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: auto;
+        }
+
+        .places-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .paper {
+            border: 1px solid;
+            border-top-right-radius: 68px 2px;
+            border-top-left-radius: 2px 53px;
+            border-bottom-right-radius: 2px 73px;
+            border-bottom-left-radius: 78px 1.3px;
+            box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
+            font-family: "Comic Sans MS", "sans-serif";
+            margin: 20px;
+            transform: rotate(0deg);
+        }
+
+        .sticky-notes {
+            background-color: white;
+            height: 250px;
+            width: 350px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: lightyellow;
+            position: relative;
+            overflow: auto; /* Add overflow for scrolling */
+        }
+
+        .sticky-notes img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sticky-notes h2, .sticky-notes p {
+            color: black;
+            margin: 0;
+        }
+
+        .sticky-notes::before,
+        .sticky-notes::after {
+            content: "";
+            background-color: darkred;
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid #4c0000;
+        }
+
+        .sticky-notes::before {
+            width: 20px;
+            height: 20px;
+            top: -10px;
+            left: -10px;
+        }
+
+        .sticky-notes::after {
+            width: 10px;
+            height: 10px;
+            top: -5px;
+            left: -5px;
+        }
+
+        .explore-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .explore-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Unique Places Showcase with Glowing Effect</h1>
+
+    <div class="places-container">
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://files.yappe.in/place/small/just-guest-house-chennai-airport-53991.webp" alt="Sticky Note 1">
+                <div>
+                    <h2>JUST GUEST HOUSE</h2>
+                    <p>VERAMAMUNIVAR ST.NEW COLONY, CHENNAI</p>
+                    <p>Price:1500 ₹/night</p>
+                    <a href="chhtl1" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat the paper div for more sticky notes -->
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/flyfish/raw/NH74213213268674/QS1042/QS1042-Q1/IMG_20220614_081855.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>SEA SHEEL PARK</h2>
+                    <p>ALI TOWER GREAMS ROAD ANNA NAGAR, CHENNAI</p>
+                    <p>Price:1200₹/night</p>
+                    <a href="chhtl2" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://content3.jdmagicbox.com/comp/chennai/b5/044pxx44.xx44.190422130142.b1b5/catalogue/fabhotel-picnic-plaza-mylapore-chennai-hotels-5ge97xt87x.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>FAB EXPRESS</h2>
+                    <p>NUNGABAKAM, CHENNAI</p>
+                    <p>Price:1400 ₹/night</p>
+                    <a href="chhtl3" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201810041323405654-ba348974c22511e8bdb80ab9279c59c4.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>SHREE GANESH GUEST HOUSE</h2>
+                    <p>VAISHNAVA COLONY, CHENNAI</p>
+                    <p>Price:1600 ₹/night</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://gos3.ibcdn.com/d72aa51ea9c611eb96050242ac110002.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>RB RESIDENCY</h2>
+                    <p>SEETHAKATHI SALAI, CHENNAI</p>
+                    <p>Price:1670 ₹/night</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/225841732.jpg?k=850160b13bd5c8602d28d854b64ddec17d2829975e0c35c96dd078d600dd4dfb&o=&hp=1" alt="Sticky Note 2">
+                <div>
+                    <h2>SAMUDRA RESIDENCY</h2>
+                    <p>GRAND SOUTHERN TRUNK ROAD, CHENNAI</p>
+                    <p>Price:1800 ₹/night</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/200703211521556200-8ae8235abedb11e688fb0224510f5e5b.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>CHENNAI DELUXE</h2>
+                    <p>KOYAMBEDU MARKET ROAD, CHENNAI</p>
+                    <p>Price:1499 ₹/night</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/9f/c0/90/exterior-view.jpg?w=700&h=-1&s=1" alt="Sticky Note 2">
+                <div>
+                    <h2>ZINGLESTAY</h2>
+                    <p>AMMAN AGAM BV NAGAR, CHENNAI</p>
+                    <p>Price:1340 ₹/night</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://r1imghtlak.mmtcdn.com/62659bd8825811e7a50c0a4cef95d023.jpg?&output-quality=75&downsize=328:180&crop=328:180;0,19&output-format=jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>IBIS HOTEL</h2>
+                    <p>MOUNT ROAD ANNA SALAI, CHENNAI</p>
+                    <p>Price:2000 ₹/night</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

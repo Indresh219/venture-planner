@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trip Plan</h1>
+    </header>
+    <div class="container">
+        <h2>Destination: <span id="destination">New York</span></h2>
+        <h3>Dates: <span id="dates">January 1, 2025 - January 5, 2025</span></h3>
+        <h3>Places to Visit:</h3>
+        <ul id="places">
+            <li>Central Park</li>
+            <li>Times Square</li>
+            <li>Empire State Building</li>
+        </ul>
+        <h3>Accommodation:</h3>
+        <p id="accommodation">Hotel XYZ, New York City</p>
+        <h3>Transportation:</h3>
+        <p id="transportation">Flight: ABC Airlines, Departure: January 1, 2025, Return: January 5, 2025</p>
+        <a href="#" class="button">Edit Trip</a>
+    </div>
+</body>
+</html>

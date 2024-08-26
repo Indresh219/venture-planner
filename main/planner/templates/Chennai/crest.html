@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Places Showcase with Glowing Effect</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?cs=srgb&dl=pexels-pixabay-260922.jpg&fm=jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            transition: background 0.5s ease-in-out;
+        }
+
+        h1 {
+            padding: 20px;
+            background-color: #d00000;
+            color: #fff;
+            font-size: 2em;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: auto;
+        }
+
+        .places-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .paper {
+            border: 1px solid;
+            border-top-right-radius: 68px 2px;
+            border-top-left-radius: 2px 53px;
+            border-bottom-right-radius: 2px 73px;
+            border-bottom-left-radius: 78px 1.3px;
+            box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
+            font-family: "Comic Sans MS", "sans-serif";
+            margin: 20px;
+            transform: rotate(0deg);
+        }
+
+        .sticky-notes {
+            background-color: white;
+            height: 250px;
+            width: 350px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: lightyellow;
+            position: relative;
+            overflow: auto; /* Add overflow for scrolling */
+        }
+
+        .sticky-notes img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sticky-notes h2, .sticky-notes p {
+            color: black;
+            margin: 0;
+        }
+
+        .sticky-notes::before,
+        .sticky-notes::after {
+            content: "";
+            background-color: darkred;
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid #4c0000;
+        }
+
+        .sticky-notes::before {
+            width: 20px;
+            height: 20px;
+            top: -10px;
+            left: -10px;
+        }
+
+        .sticky-notes::after {
+            width: 10px;
+            height: 10px;
+            top: -5px;
+            left: -5px;
+        }
+
+        .explore-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .explore-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Restaurants in chennai</h1>
+
+    <div class="places-container">
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkAFkkN5BFqVn4A8XRCcxnCmMyTNIOfNIDc6FzrbvYR2HyC0RGYR_fJikO9VpJnV8owpE&usqp=CAU" alt="Sticky Note 1">
+                <div>
+                    <h2>AASIFE BIRIYANI</h2>
+                    <p>VELACHERY MAIN ROAD TAMBARAM, CHENNAI</p>
+                    <p>PRICE:MAX-1200</p>
+                    <a href="hotel1cbe" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat the paper div for more sticky notes -->
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://images.click.in/classifieds/images/155/19_09_2019_17_50_05_b706ad7c7f7d9eab49aabe773dc1e9c7_4cykf07eng.jpeg" alt="Sticky Note 2">
+                <div>
+                    <h2>SS HYDERABAD BIRIYANI</h2>
+                    <p>NUNGABAKAM, CHENNAI</p>
+                    <p>PRICE:MAX-1500₹</p>
+                    <a href="hotel2cbe" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://kuppanna.com/cdn/shop/articles/jk-ecr.webp?v=1669702253" alt="Sticky Note 2">
+                <div>
+                    <h2>JUNIOR KUPPANNA</h2>
+                    <p>RAJA STREET GURU NAGAR, CHENNAI</p>
+                    <p>PRICE:MAX-1800₹</p>
+                    <a href="hotel3cbe" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNW_T-SSASbbBzOjzfdLHh0DFqG1GM-utjISHSP=s1360-w1360-h1020" alt="Sticky Note 2">
+                <div>
+                    <h2>BUHARI HOTEL</h2>
+                    <p>CHROMPET, CHENNAI</p>
+                    <p>PRICE:MAX-1600₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPqnhHN7dNnC1Sg8tEgYIU58zbHTYmhDdxP3OM=s1360-w1360-h1020" alt="Sticky Note 2">
+                <div>
+                    <h2>PONNUSAMY</h2>
+                    <p>NUNGAMBAKAM CHENNAI</p>
+                    <p>PRICE:MAX-1790₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipOTSqeJVo8I3-5OLCARNlJ7gshHwmo_YVT4spib=s1360-w1360-h1020" alt="Sticky Note 2">
+                <div>
+                    <h2>PAKWAN</h2>
+                    <p>GOPATHI NARAYANASWAMY CHETTY ROAD T NAGAR, CHENNAI</p>
+                    <p>PRICE:MAX-1800₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMMSo-o_sKEPwzFzgnxm73QpxWlMKuJWb6BRt_K=s1360-w1360-h1020" alt="Sticky Note 2">
+                <div>
+                    <h2></h2>
+                    <p>City, CHENNAI</p>
+                    <p>PRICE:MAX-1500₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.LeTZ-DKYA3q16GuqVznYgQHaJQ&pid=Api&P=0&h=180" alt="Sticky Note 2">
+                <div>
+                    <h2></h2>
+                    <p>City, CHENNAI</p>
+                    <p>PRICE:MAX-1500₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://www.zonebythepark.com/images/Rooms/12_19_2018_06_19_44Zone%20Coimbator-3323.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2></h2>
+                    <p>City, CHENNAI</p>
+                    <p>PRICE:MAX-1500₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

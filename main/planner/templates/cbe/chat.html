@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Places Showcase with Glowing Effect</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://img.freepik.com/free-photo/group-bombay-chat-food-includes-golgappa-panipuri-bhel-puri-sev-poori-dahipuri-ragda-pattice-raj-kachori-etc-selective-focus_466689-34786.jpg?size=626&ext=jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            transition: background 0.5s ease-in-out;
+        }
+
+        h1 {
+            padding: 20px;
+            background-color: #d00000;
+            color: #fff;
+            font-size: 2em;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: auto;
+        }
+
+        .places-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .paper {
+            border: 1px solid;
+            border-top-right-radius: 68px 2px;
+            border-top-left-radius: 2px 53px;
+            border-bottom-right-radius: 2px 73px;
+            border-bottom-left-radius: 78px 1.3px;
+            box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
+            font-family: "Comic Sans MS", "sans-serif";
+            margin: 20px;
+            transform: rotate(0deg);
+        }
+
+        .sticky-notes {
+            background-color: white;
+            height: 250px;
+            width: 350px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: lightyellow;
+            position: relative;
+            overflow: auto; /* Add overflow for scrolling */
+        }
+
+        .sticky-notes img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sticky-notes h2, .sticky-notes p {
+            color: black;
+            margin: 0;
+        }
+
+        .sticky-notes::before,
+        .sticky-notes::after {
+            content: "";
+            background-color: darkred;
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid #4c0000;
+        }
+
+        .sticky-notes::before {
+            width: 20px;
+            height: 20px;
+            top: -10px;
+            left: -10px;
+        }
+
+        .sticky-notes::after {
+            width: 10px;
+            height: 10px;
+            top: -5px;
+            left: -5px;
+        }
+
+        .explore-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .explore-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Unique Places Showcase with Glowing Effect</h1>
+
+    <div class="places-container">
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.QB6OuS0yuxKdf24_LLAbaAHaER&pid=Api&P=0&h=180" alt="Sticky Note 1">
+                <div>
+                    <h2>CULCUTTA CHAT</h2>
+                    <p>SRIRAM COLONY,COIMBATORE</p>
+                    <p>Price:MAX-150₹</p>
+                    <a href="hotel1cbe" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat the paper div for more sticky notes -->
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNtxQXx1O8KjFX1o9nk308fM78DaNNjNFME194E=s1360-w1360-h1020" alt="Sticky Note 2">
+                <div>
+                    <h2>CHAAT SINGH</h2>
+                    <p>VAIGAI COLONY, COIMBATORE</p>
+                    <p>Price: MAX-200₹</p>
+                    <a href="hotel2cbe" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNHQxeZtIz4kTzp2KHcbiIsWk6a6xsUUfzCKauJ=s1360-w1360-h1020" alt="Sticky Note 2">
+                <div>
+                    <h2>MIRCHI CHAATS</h2>
+                    <p>GROUND FLOOR GANDHI IRWIN ROAD, COIMBATORE</p>
+                    <p>Price:MAX-120₹</p>
+                    <a href="hotel3cbe" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNa9Ap_l9M-NBOJgj5UQB8mVID5MbWZpD0dr5Y=s1360-w1360-h1020" alt="Sticky Note 2">
+                <div>
+                    <h2>INSTA CHAAT</h2>
+                    <p>PONNURANGAM ROAD RS PURAM, COIMBATORE</p>
+                    <p>Price:MAX-170₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMoBcTNiJskoNQ1QoNfl5jVg8FD5yrI0OowVclw=s1360-w1360-h1020" alt="Sticky Note 2">
+                <div>
+                    <h2>BOMBAY CHAATS</h2>
+                    <p>KANNYSAMY ROAD RS PURAM, COIMBATORE</p>
+                    <p>Price:MAX-240₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://imgs.search.brave.com/FmhbwEsZZm6Dq_mHfkKjy8WAXf7Nad9Gn_zTOx5-Chs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50LmpkbWFnaWNi/b3guY29tL2NvbXAv/Y29pbWJhdG9yZS9t/OC8wNDIycHg0MjIu/eDQyMi4xNzA1MjQy/MjIyNTkucjZtOC9j/YXRhbG9ndWUvbWVy/cmllLWJlcnJpZS1w/ZWVsYW1lZHUtY29p/bWJhdG9yZS1waXp6/YS1vdXRsZXRzLXhh/OXc5LmpwZz9jbHI9/IzRjMjQxYT9maXQ9/YXJvdW5kfDI3MDox/MzAmY3JvcD0yNzA6/MTMwOyosKg" alt="Sticky Note 2">
+                <div>
+                    <h2>MERRIE BERRIE</h2>
+                    <p>ANNAI MAHAL PODANUR, COIMBATORE</p>
+                    <p>Price:MAX-150₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://imgs.search.brave.com/aH_DelSWr6LOYll1LoMduAuso2Itv99kmyX_qgIgSgg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50LmpkbWFnaWNi/b3guY29tL2NvbXAv/Y29pbWJhdG9yZS9m/Ny8wNDIycHg0MjIu/eDQyMi4yMTExMTQy/MTM2MDQuYzFmNy9j/YXRhbG9ndWUvcmFz/aGktc2FuZHdpY2gt/Y29ybmVyLXJzLXB1/cmFtLWNvaW1iYXRv/cmUtY29pbWJhdG9y/ZS1mYXN0LWZvb2Qt/eDBndTcyMzRpYy0y/NTAuanBnP2Nscj0j/NDkxZDFk" alt="Sticky Note 2">
+                <div>
+                    <h2>RASHI SANDWICH CORNER</h2>
+                    <p>SRI SANMUGAM ROAD SUKRAWARPET, COIMBATORE</p>
+                    <p>Price:MAX-100₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="/static/h1.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>QUADRO BAE</h2>
+                    <p>SAMANDHAM ROAD RS PURAM, COIMBATORE</p>
+                    <p>Price:MAX-130₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNl30NGa1Mk7jsi5iwjdWPgj-vEVW2DNxNyScYi=s1360-w1360-h1020" alt="Sticky Note 2">
+                <div>
+                    <h2>CHAAT SQUARE</h2>
+                    <p>LINGE GOUNDER THIRUMURUGAN NAGAR,COIMBATORE</p>
+                    <p>Price:MAX-220₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

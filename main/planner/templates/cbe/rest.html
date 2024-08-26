@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Places Showcase with Glowing Effect</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?cs=srgb&dl=pexels-pixabay-260922.jpg&fm=jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            transition: background 0.5s ease-in-out;
+        }
+
+        h1 {
+            padding: 20px;
+            background-color: #d00000;
+            color: #fff;
+            font-size: 2em;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: auto;
+        }
+
+        .places-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .paper {
+            border: 1px solid;
+            border-top-right-radius: 68px 2px;
+            border-top-left-radius: 2px 53px;
+            border-bottom-right-radius: 2px 73px;
+            border-bottom-left-radius: 78px 1.3px;
+            box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
+            font-family: "Comic Sans MS", "sans-serif";
+            margin: 20px;
+            transform: rotate(0deg);
+        }
+
+        .sticky-notes {
+            background-color: white;
+            height: 250px;
+            width: 350px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: lightyellow;
+            position: relative;
+            overflow: auto; /* Add overflow for scrolling */
+        }
+
+        .sticky-notes img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sticky-notes h2, .sticky-notes p {
+            color: black;
+            margin: 0;
+        }
+
+        .sticky-notes::before,
+        .sticky-notes::after {
+            content: "";
+            background-color: darkred;
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid #4c0000;
+        }
+
+        .sticky-notes::before {
+            width: 20px;
+            height: 20px;
+            top: -10px;
+            left: -10px;
+        }
+
+        .sticky-notes::after {
+            width: 10px;
+            height: 10px;
+            top: -5px;
+            left: -5px;
+        }
+
+        .explore-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .explore-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Unique Places Showcase with Glowing Effect</h1>
+
+    <div class="places-container">
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://i.ytimg.com/vi/SRLdiHWX_Zw/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGGUgTyhGMA8=&rs=AOn4CLA-dF3Fr-gAxX_QC21kzjoEIH3_vA" alt="Sticky Note 1">
+                <div>
+                    <h2><STREET ARABIA/h2>
+                    <p>PODANUR, COIMBATORE</p>
+                    <p>Price:MAX-1500₹</p>
+                    <a href="hotel1cbe" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat the paper div for more sticky notes -->
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://content.jdmagicbox.com/comp/coimbatore/s2/0422px422.x422.200223214023.m4s2/catalogue/arabian-hunt-singanallur-coimbatore-food-trucks-3dirk1flxp.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>ARABIAN HUNT</h2>
+                    <p>RS PURAM, COIMBATORE</p>
+                    <p>Price:MAX-2000₹</p>
+                    <a href="hotel2cbe" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://content3.jdmagicbox.com/comp/chennai/g7/044pxx44.xx44.180711180439.d8g7/catalogue/bbq-ride-kodambakkam-chennai-home-delivery-restaurants-m3tuugvyqh.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>BBQ RIDE</h2>
+                    <p>UKKADAM, COIMBATORE</p>
+                    <p>Price:MAX-1000</p>
+                    <a href="hotel3cbe" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.VaG1Vf1JxIwzFgAcLkl0UgHaDV&pid=Api&P=0&h=180" alt="Sticky Note 2">
+                <div>
+                    <h2>SS HYDERABAD BIRIYANI</h2>
+                    <p>GANDHIPURAM, COIMBATORE</p>
+                    <p>Price:MAX-1300₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://content.jdmagicbox.com/comp/coimbatore/m2/0422px422.x422.171011170535.k7m2/catalogue/krishna-tiffin-room-coimbatore-multicuisine-restaurants-50rtlgeo2b.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>SRI KRISHNA MESS</h2>
+                    <p>KUNIAMUTHUR, COIMBATORE</p>
+                    <p>Price:MAX-500₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://content.jdmagicbox.com/comp/coimbatore/z3/0422px422.x422.170517125153.m6z3/catalogue/ivar-night-food-sivananda-colony-coimbatore-biryani-restaurants-ekabxbrm3a.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>IVAR CLOUD KITCHEN</h2>
+                    <p>SINGANALLUR, COIMBATORE</p>
+                    <p>Price:MAX-2000₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://b.zmtcdn.com/data/pictures/8/3002668/0af6d8e4390bf206c3d94305ac72323b.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>BURMA BHAI</h2>
+                    <p>RS PURAM, COIMBATORE</p>
+                    <p>Price:MAX-1200₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.SsXw5uoSckvb3CJySZ0HRwHaC-&pid=Api&P=0&h=180" alt="Sticky Note 2">
+                <div>
+                    <h2>HOTEL MUTHU ROWTHER</h2>
+                    <p>UKKADAM, COIMBATORE</p>
+                    <p>PricE:MAX-1500₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.50isXfDQWVsh5XovD8ENtAHaFi&pid=Api&P=0&h=180" alt="Sticky Note 2">
+                <div>
+                    <h2>ANNAPOORNA</h2>
+                    <p>POLLACHI, COIMBATORE</p>
+                    <p>Price:MAX-1700 ₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

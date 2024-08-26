@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Places Showcase with Glowing Effect</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://img.freepik.com/free-photo/group-bombay-chat-food-includes-golgappa-panipuri-bhel-puri-sev-poori-dahipuri-ragda-pattice-raj-kachori-etc-selective-focus_466689-34786.jpg?size=626&ext=jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            transition: background 0.5s ease-in-out;
+        }
+
+        h1 {
+            padding: 20px;
+            background-color: #d00000;
+            color: #fff;
+            font-size: 2em;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: auto;
+        }
+
+        .places-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .paper {
+            border: 1px solid;
+            border-top-right-radius: 68px 2px;
+            border-top-left-radius: 2px 53px;
+            border-bottom-right-radius: 2px 73px;
+            border-bottom-left-radius: 78px 1.3px;
+            box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
+            font-family: "Comic Sans MS", "sans-serif";
+            margin: 20px;
+            transform: rotate(0deg);
+        }
+
+        .sticky-notes {
+            background-color: white;
+            height: 250px;
+            width: 350px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: lightyellow;
+            position: relative;
+            overflow: auto; /* Add overflow for scrolling */
+        }
+
+        .sticky-notes img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sticky-notes h2, .sticky-notes p {
+            color: black;
+            margin: 0;
+        }
+
+        .sticky-notes::before,
+        .sticky-notes::after {
+            content: "";
+            background-color: darkred;
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid #4c0000;
+        }
+
+        .sticky-notes::before {
+            width: 20px;
+            height: 20px;
+            top: -10px;
+            left: -10px;
+        }
+
+        .sticky-notes::after {
+            width: 10px;
+            height: 10px;
+            top: -5px;
+            left: -5px;
+        }
+
+        .explore-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .explore-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Unique Places Showcase with Glowing Effect</h1>
+
+    <div class="places-container">
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://content.jdmagicbox.com/comp/chennai/t8/044pxx44.xx44.180901055807.v5t8/catalogue/link-s-chat-pattalam-chennai-chaat-corners-761g2yivka.jpg?clr=#333333?fit=around%7C270%3A130&crop=270%3A130%3B%2A%2C%2A" alt="Sticky Note 1">
+                <div>
+                    <h2>LINKS LINKS</h2>
+                    <p>RAJA ANNAMALAI ROAD, CHENNAI</p>
+                    <p>Price: $280/night</p>
+                    <a href="hotel1cbe" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat the paper div for more sticky notes -->
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://files.yappe.in/place/full/nungambakkam-chaat-corner-2595059.webp" alt="Sticky Note 2">
+                <div>
+                    <h2>NUNGABAKAM CHAAT CORNER</h2>
+                    <p>TIRUMURTY NAGAR, CHENNAI</p>
+                    <p>Price:MAX-160 ₹</p>
+                    <a href="hotel2cbe" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://kakada.in/wp-content/uploads/2021/08/Edited-Kakada-Building.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>KAKADA RAMPRASAD</h2>
+                    <p>SOWCARPET GEORGE TOWN, CHENNAI</p>
+                    <p>Price:MAX-250 ₹</p>
+                    <a href="hotel3cbe" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://content.jdmagicbox.com/comp/chennai/z4/044pxx44.xx44.090818162751.v7z4/catalogue/sri-keshav-chats-vepery-chennai-chaat-corners-1plfuo8.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>SRI KESHAV CHAATS</h2>
+                    <p>VEPERY PERIYAMET, CHENNAI</p>
+                    <p>Price:MAX-200 ₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://b.zmtcdn.com/data/pictures/9/66339/f172fab8a56baebee3be9396a9cc7dae.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>HEMANTH CHATS</h2>
+                    <p>JERMIAH ROAD , CHENNAI</p>
+                    <p>Price:MAX-100 ₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://settlein.nz/uploads/default/original/1X/e51d188e2e2705e7cd3a2509a0931600a0dc9dcb.jpeg" alt="Sticky Note 2">
+                <div>
+                    <h2>MAYA'S CHAAT</h2>
+                    <p>AUDIAPPA NAICKEN STREET, CHENNAI</p>
+                    <p>Price:MAX-120 ₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/fe/c3/c9/photo0jpg.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>SHREE MITHAI</h2>
+                    <p>CHETPET TV ROAD, CHENNAI</p>
+                    <p>Price:MAX-140 ₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://content.jdmagicbox.com/comp/chennai/u9/044pxx44.xx44.180405190943.w5u9/catalogue/sree-gupta-bhavan-porur-chennai-fast-food-kq05n.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>SREE GUPTA BHAVAN</h2>
+                    <p>PADI  STREET, CHENNAI</p>
+                    <p>Price:MAX-100 ₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="sticky-notes">
+                <img src="https://content.jdmagicbox.com/comp/chennai/a5/044pxx44.xx44.220401030847.g9a5/catalogue/ovo-and-latte-chromepet-chennai-bakery-food-home-delivery-wlb159gb75.jpg" alt="Sticky Note 2">
+                <div>
+                    <h2>OVO  LATTE</h2>
+                    <p>VASANTHAN NAGAR, CHENNAI</p>
+                    <p>Price:MAX-150₹</p>
+                    <a href="explore/another-place" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
